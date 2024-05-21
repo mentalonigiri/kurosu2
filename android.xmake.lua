@@ -11,7 +11,7 @@ add_files("$(env ANDROID_NDK_ROOT)/sources/android/native_app_glue/android_nativ
 
 target("native-activity")
 set_default(true)
-add_files("main.cpp")
+add_files("src/main.cpp")
 if is_plat("android") then
   set_kind("shared")
   --add_deps("glue")
@@ -29,6 +29,20 @@ if is_plat("android") then
     "GLESv1_CM",
     "log")
   add_shflags("-u ANativeActivity_onCreate")
+  
+  	-- lvgl part
+	add_defines("LV_LVGL_H_INCLUDE_SIMPLE")
+	add_defines("LV_CONF_INCLUDE_SIMPLE")
+	add_files("lvgl/src/**.c")
+	
+	-- this one exists in original cmakelists, but no such file exist
+	--add_files("lvgl/src/*.S")
+	
+	add_files("lvgl/src/libs/thorvg/*.cpp")
+	add_files("lvgl/src/others/vg_lite_tvg/*.cpp")
+	add_includedirs("lvgl")
+	add_includedirs(".") -- lvgl_conf.h here
+	add_includedirs("lvgl/src/libs/thorvg")
 end
 
 end
