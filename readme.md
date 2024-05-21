@@ -4,6 +4,7 @@ buildable for many platforms
 using SDL2 and LVGL.
 
 ## deps
+
 ### General
 1. xmake
 
