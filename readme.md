@@ -11,6 +11,7 @@ Here's the list of dependencies:
 
 ### Android
 1. sdkmanager (pip install sdkmanager). Or it can be sdkmanager from android sdk
+1. openjdk to compile java of course
 
 ### Windows
 1. mingw toolchain installed
