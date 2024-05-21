@@ -161,7 +161,7 @@ for arch in string.gmatch(data.build_for_archs, "[^,]+") do
 	[[xmake f -P . 
 	--ndk_sdkver=${android_legacy_platform} -vDy -p android
 	-m release -a ${arch}]]))
-	os.exec([[xmake build -P . -vDy]])
+	os.exec([[xmake build -F android.xmake.lua -P . -vDy]])
 	os.mkdir(f("build/apk/lib/${arch}"))
 	os.cp(f("build/android/${arch}/**.so"), f("build/apk/lib/${arch}"))
 end
