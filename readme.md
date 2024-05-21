@@ -1,3 +1,8 @@
+# Kurosu2
+it's a little helloworld kind of app
+buildable for many platforms
+using SDL2 and LVGL.
+
 ## deps
 ### General
 1. xmake
