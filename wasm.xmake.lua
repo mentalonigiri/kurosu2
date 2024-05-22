@@ -1,4 +1,4 @@
-target("kurosu")
+target("index")
 	set_kind("binary")
 	add_files("src/main.cpp")
 	add_defines("SDL_main=main")
