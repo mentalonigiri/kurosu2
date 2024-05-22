@@ -3,6 +3,9 @@ it's a little helloworld kind of app
 buildable for many platforms
 using SDL2 and LVGL.
 
+## emscripten version demo
+[build/wasm/wasm32/release](build/wasm/wasm32/release)
+
 ## deps
 Here's the list of dependencies:
 
