@@ -23,6 +23,7 @@ void init() {
 	SDL_Init(SDL_INIT_EVERYTHING);  // Initialize SDL2
     lv_init();
 	window = lv_sdl_window_create(640, 480);
+    lv_sdl_window_set_resizeable(window, true);
 	// Check that the window was successfully created
     if (window == NULL) {
         // In the case that the window could not be made...
