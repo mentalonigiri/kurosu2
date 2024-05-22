@@ -300,9 +300,9 @@ apksigner sign
 ]]))
 
 -- cleanup
-for _, thing in ipairs({"build", ".xmake"}) do
-	os.rm(thing)
-end
+-- for _, thing in ipairs({"build", ".xmake"}) do
+-- 	os.rm(thing)
+-- end
 
 end
 
