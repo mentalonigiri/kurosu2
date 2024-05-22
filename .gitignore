@@ -1,4 +1,4 @@
-build/
+build/*
 !build/wasm/
 build/wasm/*
 !build/wasm/wasm32/
