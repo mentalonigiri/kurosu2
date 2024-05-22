@@ -8,3 +8,4 @@ build/wasm/wasm32/*
 *.apk
 *.aab
 *.idsig
+compile_commands.json
